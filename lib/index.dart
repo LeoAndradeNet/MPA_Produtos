@@ -6,3 +6,4 @@ export '/categoria/criar_categoria/criar_categoria_widget.dart'
     show CriarCategoriaWidget;
 export '/produto/criar_produto/criar_produto_widget.dart'
     show CriarProdutoWidget;
+export '/produto/produtos/produtos_widget.dart' show ProdutosWidget;
