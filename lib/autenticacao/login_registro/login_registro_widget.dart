@@ -50,6 +50,8 @@ class _LoginRegistroWidgetState extends State<LoginRegistroWidget>
 
     _model.txtSenhaLoginTextController ??= TextEditingController();
     _model.txtSenhaLoginFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

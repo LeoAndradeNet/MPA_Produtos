@@ -30,6 +30,8 @@ class _CriarProdutoWidgetState extends State<CriarProdutoWidget> {
 
     _model.txtNomeTextController ??= TextEditingController();
     _model.txtNomeFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

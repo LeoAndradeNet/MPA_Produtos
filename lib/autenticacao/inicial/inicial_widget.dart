@@ -25,6 +25,8 @@ class _InicialWidgetState extends State<InicialWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => InicialModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
